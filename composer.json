@@ -1,0 +1,11 @@
+{
+    "name": "repro/paratest-coverage-union",
+    "require-dev": {
+        "phpunit/phpunit": "^13.3",
+        "brianium/paratest": "^7.24",
+        "phpunit/phpcov": "*"
+    },
+    "autoload": { "psr-4": { "Repro\\": "src/" } },
+    "autoload-dev": { "psr-4": { "Repro\\Tests\\": "tests/" } },
+    "config": { "sort-packages": true }
+}
