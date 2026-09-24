@@ -17,6 +17,9 @@ docker run --rm -v "$PWD":/app pcc-repro ./repro.sh
 
 Same result with Xdebug (`php -n -d zend_extension=xdebug -d xdebug.mode=coverage`).
 
+Not reproducible with php-code-coverage 12.5.7 (PHPUnit 12.5.35, phpcov 11.0.4). Reproducible
+with every 14.x tested: 14.0.0 and 14.1.0 give 60.00 % (6/10), 14.2.0 to 14.3.3 give 66.66 % (6/9).
+
 Lines reported as not covered after the merge:
 
 - `src/MatchSample.php:9` — `return match ($value) {`
